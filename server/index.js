@@ -2,7 +2,7 @@
 const SRV_PORT = 9765;
 /*const DB_PORT = '27017';
 const DB_NAME = ''*/
-const CLIENT_URL = 'http://localhost:8080';
+const CLIENT_URL = 'http://wajihome.wajisan.eu:9005';
 /* CONFIG */
 
 

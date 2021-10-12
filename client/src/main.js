@@ -13,7 +13,7 @@ import "./design/style.css";
 Vue.config.productionTip = false
 
 const base = axios.create({
-  baseURL: "http://localhost:9765"
+  baseURL: "http://wajihome.wajisan.eu:9765"
 });
 
 

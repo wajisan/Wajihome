@@ -8,7 +8,6 @@ export default {
     name: 'Plugins',
 
     data: () => ({
-        userId: "",
         traffics: {},
         meteo: {},
         transports: {},
@@ -81,6 +80,7 @@ export default {
                 .post("/plugin/maps/", {})
                 .then(response => {
                     this.maps = response.data.maps;
+		    console.log(response);
                 });
                 return null;
             }
@@ -91,13 +91,11 @@ export default {
     },
 
     created() {
-        let user = Customs.getUserDetails();
-        this.userId = user._id;
         this.getTraffic();
         this.getMeteo();
         this.getTransport();
         this.getSport();
-        this.getMaps();
+        //this.getMaps();
     },
 
     updated() {

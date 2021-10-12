@@ -52,14 +52,14 @@
             </div>
         </div>
 
-        <div class="rectangle maps">
+       <!-- <div class="rectangle maps">
             <div class="header"><i class="fa fa-road fa-2x"></i></div>
             <div class="under-item bolder">Villiers sur marne - Morangis</div>
             <div class="under-item">
                 <span class="bolder big-text">{{maps.duration}}</span>
                 <span>{{maps.distance}}</span>
             </div>        
-        </div>
+        </div>-->
     </div>
 </div>
 </template>

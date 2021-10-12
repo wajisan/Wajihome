@@ -125,26 +125,30 @@ exports.getSport = function(req, res, next) {
     ).catch(err => res.status(500).json({title: "Error",error: err}));
 }
 
-exports.getMaps = function(req, res, next) {
-    axios(param.maps.url)
+exports.getMaps = async function(req, res, next) {
+    await axios
+    .get(param.maps.url, { headers: { 'User-Agent': 'Mozilla/5.0'}})
     .then(response => {
+        console.log('try');
         const $ = cheerio.load(response.data);
-        /*fs.writeFile('google.txt', response.data, function(err){
+        fs.writeFile('google.txt', response.data, function(err){
             if (err) return console.log(err);
             console.log('DONE FILE');
-        });*/
+        });
         let r = {};
         $("span > div:contains('km')").each((i, elem) => {
+            console.log('found !');
             if (elem.childNodes.length >= 3 && elem.childNodes[1].childNodes.length >= 1) {
                 r.duration = elem.childNodes[1].childNodes[0].data.replace(/\uFFFD/g, ' ');
                 r.distance = elem.childNodes[2].data.replace(/\uFFFD/g, ' ');
             }
 
         });
+        console.log('end');
         res.status(200).json({
             title: "Success",
             maps: r
         });
     }
-    ).catch(err => res.status(500).json({title: "Error",error: err}));
+    ).catch(err => {res.status(500).json({title: "Error",error: err}); console.log('--------------------------------------------'); console.log(err);});
 }
