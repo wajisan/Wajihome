@@ -20,7 +20,7 @@ const base = axios.create({
 
 Vue.prototype.$http = base;
 Vue.prototype.$appName = 'WajiHome';
-Vue.prototype.$appURL = 'http://localhost:8080/'
+Vue.prototype.$appURL = 'http://wajihome.wajisan.eu:9005/'
 
 Vue.config.productionTip = false;
 new Vue({
