@@ -1,0 +1,89 @@
+body {
+    background-color: #e0e5ec;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+}
+  
+  .rectangle {
+    min-height: 151px;
+    min-width: 180px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 15px;
+    background: '#EOE5EC';
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.5);
+    padding: 15px 35px;
+  }
+  
+  
+  
+div {
+    color: #3162b1d1;
+}
+
+.theme--light.v-application {
+      background-color: transparent !important;
+}
+
+.under-item {
+    display: grid;
+    text-align: center;
+    margin: auto;
+    padding: 7px 0px;
+}
+
+.under-item span {
+    padding: 6px 7px;
+}
+
+.meteo .under-item, .sport .under-item, .transport .under-item {
+    display: block;
+}
+
+.meteo span, .sport span, .transport span {
+    padding: 6px 10px;
+}
+
+.meteo .under-item img {
+    max-height: 32px;
+    margin-bottom: 5px;
+}
+
+.meteo span i, .meteo span svg {
+    margin-left: 6px;
+}
+
+.big-text {
+    font-size: 35px;
+}
+
+.big-text i {
+    font-size: 28px;
+    margin-bottom: 2px;
+}
+
+.bolder {
+    font-weight: bold;
+}
+.transport .first-line {
+    display: flex;
+}
+
+.transport .first-line span {
+    max-width: 59px;
+    padding: 1px 8px;
+}
+
