@@ -9,7 +9,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-the owner was sick about searching all the interesting in multipal website, so he put everything in one page.
+the owner of this project was sick about searching all the interesting data in multiple websites, so he decided to put everything in one page.
 
 ### Built With
 
